@@ -1,18 +1,20 @@
 import static com.raylib.Raylib.*;
 
 public class Line {
-    public static String command;
-    public static String object;
-    public static Color color;
-    public int x;
-    public int y;
+    public static int linesAmount = 256;
 
-    public Line(String cmd, String obj, Color col, int xpos, int ypos)
+    public static String[] command = new String[linesAmount];
+    public static String[] object = new String[linesAmount];
+    public static Color[] color = new Color[linesAmount];
+    public static int[] x = new int[linesAmount];
+    public static int[] y = new int[linesAmount];
+
+    public static void SetLine(String cmd, String obj, Color col, int xpos, int ypos, int index)
     {
-        command = cmd;
-        object = obj;
-        color = col;
-        x = xpos;
-        y = ypos;
+        command[index] = cmd;
+        object[index] = obj;
+        color[index] = col;
+        x[index] = xpos;
+        y[index] = ypos;
     }
 }

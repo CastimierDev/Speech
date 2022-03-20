@@ -2,8 +2,10 @@ import static com.raylib.Raylib.*;
 import static com.raylib.Jaylib.BLACK;
 
 public class Main {
+    public static int index = 0;
 
     public static void main(String args[]) {
+
         SetTargetFPS(Settings.fps);
         InitWindow(Settings.screenWidth, Settings.screenHeigth, "Speech");
         InitAudioDevice();
@@ -12,11 +14,17 @@ public class Main {
 
         while (!WindowShouldClose())
         {
+            if (IsKeyPressed(KEY_SPACE) && index <= Line.linesAmount) index += 1;
+
             BeginDrawing();
 
             ClearBackground(Settings.bgColor);
 
-            DrawText(Define.lines[0].object, Define.lines[0].x,Define.lines[0].y,Settings.fontSize,BLACK);
+            switch(Define.lines.command[index])
+            {
+                case "speak":
+                    Drawing.DrawSpeak(index);
+            }
 
             EndDrawing();
         }
