@@ -3,9 +3,11 @@ import static com.raylib.Jaylib.BLACK;
 
 public class Main {
     public static int index = 0;
+    public static Texture texture;
+    public static Sound effect;
 
-    public static void main(String args[]) {
-
+    public static void main(String args[])
+    {
         SetTargetFPS(Settings.fps);
         InitWindow(Settings.screenWidth, Settings.screenHeigth, "Speech");
         InitAudioDevice();
@@ -14,17 +16,15 @@ public class Main {
 
         while (!WindowShouldClose())
         {
-            if (IsKeyPressed(KEY_SPACE) && index <= Line.linesAmount) index += 1;
+            Input.CheckInput(index);
 
             BeginDrawing();
 
             ClearBackground(Settings.bgColor);
 
-            switch(Define.lines.command[index])
-            {
-                case "speak":
-                    Drawing.DrawSpeak(index);
-            }
+            Parser.Parse(index);
+
+            Drawing.DrawDevMode();
 
             EndDrawing();
         }
