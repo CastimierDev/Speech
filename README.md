@@ -26,16 +26,16 @@ My goal is to make a small game with it (maybe 2 hours long or something) and pu
 I made a short list of the things I need for that:
 
 0.1:
-  Showing text [X]
-  Showing images [X]
-  End the game [X]
+Showing text [X]
+Showing images [X]
+End the game [X]
 0.2:
-  Background [X]
-  Sound [WIP]
+Background [X]
+Sound [WIP]
 0.3:
-  Choice [O]
-  Branches [O]
-  Player character(s) with changeable attributes [O]
+Choice [O]
+Branches [O]
+Player character(s) with changeable attributes [O]
 0.4:
-  Custom mini games [O]
-  Read commands and stuff from file [O]
+Custom mini games [O]
+Read commands and stuff from file [O]
