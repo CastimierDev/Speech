@@ -25,7 +25,7 @@ If you want some event to happen later in the story than you just need to change
 
 # Goal And Progress
 My goal is to make a small game with it (maybe 2 hours long or something) and publish it without having to change the entire engine.
-I made a short list of the things I need for that:
+I made a short todo-list:
 
 0.1:
 
@@ -40,6 +40,7 @@ End the game [X]
 Background [X]
 
 Sound [WIP]
+Music [O]
 
 0.3:
 
@@ -55,3 +56,4 @@ Custom mini games [O]
 
 Read commands and stuff from file [O]
 
+Mouse input [O]
