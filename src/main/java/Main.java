@@ -4,6 +4,7 @@ import static com.raylib.Jaylib.BLACK;
 public class Main {
     public static int index = 0;
     public static Texture texture;
+    public static Texture background;
     public static Sound effect;
 
     public static void main(String args[])
@@ -22,13 +23,20 @@ public class Main {
 
             ClearBackground(Settings.bgColor);
 
+            if (Parser.backgroundLoaded) Drawing.DrawBg(index);
+
             Parser.Parse(index);
 
-            Drawing.DrawDevMode();
+            Drawing.DrawDevMode(index);
 
             EndDrawing();
         }
 
+        End();
+    }
+
+    public static void End()
+    {
         CloseWindow();
     }
 }

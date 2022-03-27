@@ -3,18 +3,27 @@ import static com.raylib.Raylib.*;
 public class Parser {
     public static boolean textureLoaded = false;
     public static boolean soundLoaded = false;
+    public static boolean backgroundLoaded = false;
 
     public static void Parse(int i)
     {
         switch(Define.lines.command[i])
         {
-            case "speak":
-                Drawing.DrawSpeak(i);
+            case "say":
+                Drawing.DrawSay(i);
                 break;
 
-            case "picture":
-                if (!textureLoaded) Drawing.LoadImage(i);
-                Drawing.DrawImage(i);
+            case "pic":
+                if (!textureLoaded) Drawing.LoadPic(i);
+                Drawing.DrawPic(i);
+                break;
+
+            case "bg":
+                Drawing.LoadBackground(i);
+                break;
+
+            case "end":
+                Main.End();
                 break;
 
             /*case "sound":

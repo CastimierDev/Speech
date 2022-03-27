@@ -7,9 +7,10 @@ public class Define {
 
     public static void DefineLines()
     {
-        lines.SetLine("speak", "Hello World", BLACK, 0, 0, 0);
-        lines.SetLine("speak", "Bye World", BLACK, 0, 0, 1);
-        lines.SetLine("picture", "BLACK", WHITE, 0, 0, 2);
-        lines.SetLine("picture", "WHITE", WHITE, 0, 0, 3);
+        lines.SetLine("bg", "BLACK", WHITE, 0, 0, 0);
+        lines.SetLine("say", "Hello World", WHITE, 0, 0, 1);
+        lines.SetLine("pic", "WHITE", WHITE, 0, 0, 2);
+        lines.SetLine("say", "Bye World", WHITE, 0, 0, 3);
+        lines.SetLine("end", "END", WHITE, 0, 0, 4);
     }
 }
