@@ -5,6 +5,8 @@ A simple text adventure engine that is highly modifiable with some programming k
 
 
 # Example Of A Simple Program:
+The following lines (excluding: 1., 2. and 3.) can be copied into the Define class in the function "DefineLines".
+
 1. lines.SetLine("bg", "BLACK", WHITE, 0, 0, 0);
 2. lines.SetLine("say", "Hello World", WHITE, 0, 0, 1);
 3. lines.SetLine("end", "END", WHITE, 0, 0, 2);
