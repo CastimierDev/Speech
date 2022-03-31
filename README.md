@@ -39,7 +39,8 @@ End the game [X]
 
 Background [X]
 
-Sound [WIP]
+Sound [X]
+
 Music [O]
 
 0.3:
