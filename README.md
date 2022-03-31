@@ -5,6 +5,8 @@ A simple text adventure engine that is highly modifiable with some programming k
 
 
 # Example Of A Simple Program:
+The following lines (excluding: 1., 2. and 3.) can be copied into the Define class in the function "DefineLines".
+
 1. lines.SetLine("bg", "BLACK", WHITE, 0, 0, 0);
 2. lines.SetLine("say", "Hello World", WHITE, 0, 0, 1);
 3. lines.SetLine("end", "END", WHITE, 0, 0, 2);
@@ -23,7 +25,7 @@ If you want some event to happen later in the story than you just need to change
 
 # Goal And Progress
 My goal is to make a small game with it (maybe 2 hours long or something) and publish it without having to change the entire engine.
-I made a short list of the things I need for that:
+I made a short todo-list:
 
 0.1:
 
@@ -38,6 +40,7 @@ End the game [X]
 Background [X]
 
 Sound [WIP]
+Music [O]
 
 0.3:
 
@@ -53,3 +56,4 @@ Custom mini games [O]
 
 Read commands and stuff from file [O]
 
+Mouse input [O]
