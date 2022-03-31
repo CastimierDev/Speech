@@ -1,4 +1,5 @@
 import static com.raylib.Raylib.*;
+import static com.raylib.Raylib.Sound;
 import static com.raylib.Jaylib.BLACK;
 
 public class Main {
@@ -14,6 +15,8 @@ public class Main {
         InitAudioDevice();
 
         Define.DefineLines();
+
+        //effect = LoadSound("resources/sounds/test.wav");
 
         while (!WindowShouldClose())
         {

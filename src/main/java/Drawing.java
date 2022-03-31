@@ -41,6 +41,6 @@ public class Drawing {
 
         DrawFPS(Settings.screenWidth - min,0);
 
-        DrawText(Define.lines.object[i], Settings.screenWidth - 50, 25, 20, GREEN);
+        DrawText(Define.lines.object[i], Settings.screenWidth - 120, 25, 20, GREEN);
     }
 }
