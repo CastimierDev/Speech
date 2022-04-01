@@ -39,9 +39,7 @@ End the game [X]
 
 Background [X]
 
-Sound [X]
-
-Music [O]
+Audio [X]
 
 0.3:
 
