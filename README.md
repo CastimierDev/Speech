@@ -1,7 +1,7 @@
 # Speech
-A modifiable text adventure engine 
+A modifiable dialogue system 
 
-A simple text adventure engine that is highly modifiable with some programming knowledge.
+A simple dialogue system that is highly modifiable with some programming knowledge.
 
 
 # Example Of A Simple Program:
@@ -47,7 +47,7 @@ Choice [O]
 
 Branches [O]
 
-Player character(s) with changeable attributes [O]
+Modify a variable [O]
 
 0.4:
 
