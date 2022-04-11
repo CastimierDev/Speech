@@ -49,7 +49,7 @@ Branches [O]
 
 Modify a variable [O]
 
-0.4:
+0.4 (optional):
 
 Custom mini games [O]
 
