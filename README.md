@@ -1,3 +1,8 @@
+# Speech Java
+Speech Java is the original version of Speech, which was made in Java. 
+I am not planning on finishing Speech in Java but if you want you can use this version.
+This version only has 0.1 and 0.2 so you can't use branching unless you make it yourself.
+
 # Speech
 A modifiable dialogue system 
 
