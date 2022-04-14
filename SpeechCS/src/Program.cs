@@ -31,6 +31,8 @@ namespace Speech
 
                 ClearBackground(Settings.bgColor);
 
+                if (Parser.backgroundLoaded) Drawing.DrawBg(index);
+
                 Parser.Parse(index, line);
                 
                 //Drawing.DrawDevMode(index);
@@ -43,6 +45,7 @@ namespace Speech
 
         public static void End()
         {
+            Unload();
             CloseWindow();
         }
 
