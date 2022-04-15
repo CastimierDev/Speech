@@ -21,8 +21,6 @@ namespace Speech
 
             line = Define.DefineLines();
 
-            effect = LoadSound("resources/sounds/test.wav");
-
             while (!WindowShouldClose())
             {
                 Input.CheckInput(index);

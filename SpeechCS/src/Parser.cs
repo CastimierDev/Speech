@@ -26,7 +26,7 @@ namespace Speech
                     break;
 
                 case "bg":
-                    Console.WriteLine("Background");
+                    //Console.WriteLine("Background");
                     if (!backgroundLoaded) Drawing.LoadBackground(i, line.objec, line.x[i], line.y[i], line.color[i]);
                     Drawing.DrawBg(i);
                     break;
@@ -35,8 +35,8 @@ namespace Speech
                     Program.End();
                     break;
 
-                case "aud":
-                    if (!soundLoaded) Audio.LoadAudio();
+                case "audio":
+                    if (!soundLoaded) Audio.LoadAudio(i, line.objec);
                     if (!soundPlayed) Audio.PlayAudio(Program.effect);
                     break;
             }

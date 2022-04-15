@@ -22,22 +22,38 @@ namespace Speech
         public static void DrawBg(int i)
         {
             DrawTexture(Program.background, bgX, bgY, bgColor);
-            Console.WriteLine("Background Drawn!");
+            //Console.WriteLine("Background Drawn!");
         }
 
         public static void LoadPic(int i, string[] objec)
         {
-            Program.texture = LoadTexture("resources/images/" + objec[i] + ".png");
-            Parser.textureLoaded = true;
+            try
+            {
+                Program.texture = LoadTexture("resources/images/" + objec[i] + ".png");
+                Parser.textureLoaded = true;
+                Console.WriteLine("Loaded Image: " + objec[i]);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Failed To Load Image!");
+            }
         }
         public static void LoadBackground(int i, string[] objec, int x, int y, Color color)
         {
-            bgX = x;
-            bgY = y;
-            bgColor = color;
-            Program.background = LoadTexture("resources/images/" + objec[i] + ".png");
-            Parser.backgroundLoaded = true;
-        }
+            try
+            {
+                bgX = x;
+                bgY = y;
+                bgColor = color;
+                Program.background = LoadTexture("resources/images/" + objec[i] + ".png");
+                Parser.backgroundLoaded = true;
+                Console.WriteLine("Loaded Background: " + objec[i]);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Failed To Load Background!");
+            }
+}
 
         public static void DrawDevMode(int i)
         {

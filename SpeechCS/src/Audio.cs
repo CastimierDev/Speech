@@ -13,10 +13,18 @@ namespace Speech
             Parser.soundPlayed = true;
         }
 
-        public static void LoadAudio()
+        public static void LoadAudio(int i, string[] objec)
         {
-            Program.effect = LoadSound("resources/sounds/test.wav");
-            Parser.soundLoaded = true;
+            try
+            {
+                Program.effect = LoadSound("resources/sounds/" + objec[i] + ".wav");
+                Parser.soundLoaded = true;
+                Console.WriteLine("Loaded Audio: " + objec[i]);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Failed To Load Audio!");
+            }
         }
     }
 }

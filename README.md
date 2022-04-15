@@ -30,7 +30,7 @@ Here is a list of the currently available commands:
 1. "say" = draws text onto the screen
 2. "pic" = draws image to the screen
 3. "bg" = sets background
-4. "aud" = plays audio
+4. "audio" = plays audio
 5. "end" = ends app
 
 
