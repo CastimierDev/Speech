@@ -50,9 +50,7 @@ End the game [X]
 
 Background [X]
 
-Sound [X]
-
-Music [O]
+Audio [X]
 
 0.3:
 
@@ -60,9 +58,9 @@ Choice [O]
 
 Branches [O]
 
-Player character(s) with changeable attributes [O]
+Change variables [O]
 
-0.4:
+0.4 (optional):
 
 Custom mini games [O]
 
