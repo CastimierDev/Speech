@@ -24,6 +24,19 @@ namespace Speech
             DrawTexture(Program.background, bgX, bgY, bgColor);
             //Console.WriteLine("Background Drawn!");
         }
+        public static void DrawChoices(string[] texts, int amount, int x, int y, Color color)
+        {
+            int yChange = y;
+            int xChange = x + Settings.fontSize * 2;
+
+            for (int i = 0; i < amount; i++)
+            {
+                int num = i + 1;
+                DrawText(num.ToString(), x, yChange, Settings.fontSize, color);
+                DrawText(texts[i], xChange, yChange, Settings.fontSize, color);
+                yChange += Settings.fontSize;
+            }
+        }
 
         public static void LoadPic(int i, string[] objec)
         {

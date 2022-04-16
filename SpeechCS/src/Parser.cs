@@ -39,6 +39,10 @@ namespace Speech
                     if (!soundLoaded) Audio.LoadAudio(i, line.objec);
                     if (!soundPlayed) Audio.PlayAudio(Program.effect);
                     break;
+
+                case "choice":
+                    Choice.Choose(line, i);
+                    break;
             }
         }
     }

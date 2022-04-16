@@ -23,7 +23,7 @@ namespace Speech
 
             while (!WindowShouldClose())
             {
-                Input.CheckInput(index);
+                if (line.command[index] != "choice") Input.CheckInput(index);
 
                 BeginDrawing();
 
