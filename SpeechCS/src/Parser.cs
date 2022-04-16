@@ -43,6 +43,10 @@ namespace Speech
                 case "choice":
                     Choice.Choose(line, i);
                     break;
+
+                case "goto":
+                    Choice.Goto(int.Parse(line.objec[i]));
+                    break;
             }
         }
     }

@@ -31,9 +31,34 @@ namespace Speech
 
                     Drawing.DrawChoices(choicesString, choicesAmount, line.x[i], line.y[i], line.color[i]);
                     int chosen = Input.MakeChoice(choicesString);
-                    if (chosen != -1) Program.index += 1;
+                    switch(chosen)
+                    {
+                        case 0:
+                            Goto(3);
+                            break;
+                        case 1:
+                            Goto(0);
+                            break;
+                        case 2:
+                            Goto(4);
+                            break;
+                        case 3:
+                            Goto(6);
+                            break;
+                    }
+
+                    if (chosen != -1)
+                    {
+                        choicesList.Clear();
+                    }
+
                     break;
             }
+        }
+
+        public static void Goto(int dest)
+        {
+            Program.index = dest;
         }
     }
 }

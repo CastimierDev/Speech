@@ -59,6 +59,8 @@ Choice [X]
 
 Goto [O]
 
+If [O]
+
 Change variables [O]
 
 0.4 (optional):

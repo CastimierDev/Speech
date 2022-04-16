@@ -32,8 +32,10 @@ namespace Speech
                 if (Parser.backgroundLoaded) Drawing.DrawBg(index);
 
                 Parser.Parse(index, line);
-                
+
                 //Drawing.DrawDevMode(index);
+
+                DrawText(index.ToString(), 0, 100, 20, GREEN);
 
                 EndDrawing();
             }
