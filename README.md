@@ -32,6 +32,7 @@ Here is a list of the currently available commands:
 3. "bg" = sets background
 4. "audio" = plays audio
 5. "end" = ends app
+6. "choice" = make choice (currently not any effect)
 
 
 # Goal And Progress
@@ -54,7 +55,7 @@ Audio [X]
 
 0.3:
 
-Choice [O]
+Choice [X]
 
 Branches [O]
 
