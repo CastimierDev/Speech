@@ -57,7 +57,7 @@ Audio [X]
 
 Choice [X]
 
-Branches [O]
+Goto [O]
 
 Change variables [O]
 
