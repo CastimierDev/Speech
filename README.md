@@ -57,9 +57,9 @@ Audio [X]
 
 Choice [X]
 
-Goto [O]
+Goto [X]
 
-If [O]
+If [X]
 
 Change variables [O]
 

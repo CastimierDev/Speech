@@ -11,12 +11,13 @@ namespace Speech
         {
             Line line = new Line();
             line = SetLine("bg", "BLACK", WHITE, 0, 0, 0, line);
-            line = SetLine("choice", "test", WHITE, 0, 0, 1, line);
+            line = SetLine("if", "0", WHITE, 0, 0, 1, line);
             line = SetLine("pic", "WHITE", WHITE, 0, 0, 2, line);
             line = SetLine("say", "Bye World", WHITE, 0, 0, 3, line);
             line = SetLine("audio", "test", WHITE, 0, 0, 4, line);
-            line = SetLine("goto", "0", WHITE, 0, 0, 5, line);
-            line = SetLine("end", "END", WHITE, 0, 0, 6, line);
+            line = SetLine("choice", "test", WHITE, 0, 0, 5, line);
+            line = SetLine("goto", "0", WHITE, 0, 0, 6, line);
+            line = SetLine("end", "END", WHITE, 0, 0, 7, line);
 
             return line;
         }
