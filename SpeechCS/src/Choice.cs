@@ -30,23 +30,28 @@ namespace Speech
 
                     Drawing.DrawChoices(choicesString, choicesAmount, line.x[i], line.y[i], line.color[i]);
                     int chosen = Input.MakeChoice(choicesString);
+                    Boolean goodInput = false;
                     switch(chosen)
                     {
                         case 0:
                             Goto(3);
+                            goodInput = true;
                             break;
                         case 1:
                             Goto(0);
+                            goodInput = true;
                             break;
                         case 2:
                             Goto(4);
+                            goodInput = true;
                             break;
                         case 3:
                             Goto(6);
+                            goodInput = true;
                             break;
                     }
 
-                    if (chosen != -1)
+                    if (goodInput)
                     {
                         choicesList.Clear();
                     }
