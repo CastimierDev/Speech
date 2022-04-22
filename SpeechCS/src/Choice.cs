@@ -25,7 +25,6 @@ namespace Speech
                         choicesList.Add("Pippin");
                         choicesString = choicesList.ToArray();
                         choicesAmount = choicesString.Length;
-                        Console.WriteLine(choicesAmount.ToString());
                         choicesInitialized = true;
                     }
 
