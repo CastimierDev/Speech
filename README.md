@@ -1,5 +1,5 @@
 # Speech
-A modifiable dialogue system
+A modifiable dialogue system.
 
 A simple dialogue system that is highly modifiable with some programming knowledge.
 This version is written in C# but the original version (now the Speech-Java branch) was written in Java but isn't actively in development anymore.
@@ -32,7 +32,11 @@ Here is a list of the currently available commands:
 3. "bg" = sets background
 4. "audio" = plays audio
 5. "end" = ends app
-6. "choice" = make choice (currently not any effect)
+6. "choice" = make choice
+7. "goto" = sets index as given number
+8. "if" = make statement that checks if a variable is a certain value
+9. "load" = loads given value as current "loadednumber"
+10. "set" = sets certain variable to value of "loadednumber"
 
 
 # Goal And Progress
@@ -61,7 +65,7 @@ Goto [X]
 
 If [X]
 
-Change variables [O]
+Change variables [X]
 
 0.4 (optional):
 
