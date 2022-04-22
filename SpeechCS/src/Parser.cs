@@ -26,7 +26,6 @@ namespace Speech
                     break;
 
                 case "bg":
-                    //Console.WriteLine("Background");
                     if (!backgroundLoaded) Drawing.LoadBackground(i, line.objec, line.x[i], line.y[i], line.color[i]);
                     Drawing.DrawBg(i);
                     break;
@@ -50,6 +49,14 @@ namespace Speech
 
                 case "if":
                     If.Condition(line.objec[i]);
+                    break;
+
+                case "load":
+                    Variables.Load(line.objec[i]);
+                    break;
+
+                case "set":
+                    Variables.Set(line.objec[i]);
                     break;
             }
         }

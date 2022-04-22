@@ -15,8 +15,8 @@ namespace Speech
             switch(cond)
             {
                 case "0":
-                    conditionNumber = 1;
-                    gotoNumber = 4;
+                    conditionNumber = 5;
+                    gotoNumber = 0;
                     if (Variables.num1 == conditionNumber)
                     {
                         Choice.Goto(gotoNumber);
