@@ -2,7 +2,7 @@
 A modifiable dialogue system.
 
 A simple dialogue system that is highly modifiable with some programming knowledge.
-This version is written in C# but the original version (now the Speech-Java branch) was written in Java but isn't actively in development anymore.
+This version is written in C# with Raylib-cs, but the original version (now the Speech-Java branch) was written in Java. However it isn't actively in development anymore.
 
 
 # Example Of A Simple Program:
