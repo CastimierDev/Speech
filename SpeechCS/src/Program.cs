@@ -16,7 +16,7 @@ namespace Speech
         public static void Main()
         {
             SetTargetFPS(Settings.fps);
-            InitWindow(Settings.screenWidth, Settings.screenHeigth, "Speech");
+            InitWindow(Settings.screenWidth, Settings.screenHeigth, Settings.appName);
             InitAudioDevice();
 
             line = Define.DefineLines();

@@ -28,6 +28,7 @@ namespace Speech
                 case "bg":
                     if (!backgroundLoaded) Drawing.LoadBackground(i, line.objec, line.x[i], line.y[i], line.color[i]);
                     Drawing.DrawBg(i);
+                    if (Settings.continueCommands) Program.index += 1;
                     break;
 
                 case "end":
@@ -37,6 +38,7 @@ namespace Speech
                 case "audio":
                     if (!soundLoaded) Audio.LoadAudio(i, line.objec);
                     if (!soundPlayed) Audio.PlayAudio(Program.effect);
+                    if (Settings.continueCommands) Program.index += 1;
                     break;
 
                 case "choice":
@@ -45,18 +47,22 @@ namespace Speech
 
                 case "goto":
                     Choice.Goto(int.Parse(line.objec[i]));
+                    if (Settings.continueCommands) Program.index += 1;
                     break;
 
                 case "if":
                     If.Condition(line.objec[i]);
+                    if (Settings.continueCommands) Program.index += 1;
                     break;
 
                 case "load":
                     Variables.Load(line.objec[i]);
+                    if (Settings.continueCommands) Program.index += 1;
                     break;
 
                 case "set":
                     Variables.Set(line.objec[i]);
+                    if (Settings.continueCommands) Program.index += 1;
                     break;
             }
         }
