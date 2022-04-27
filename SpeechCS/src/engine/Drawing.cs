@@ -37,6 +37,10 @@ namespace Speech
                 yChange += Settings.fontSize;
             }
         }
+        public static void DrawContinue(int x, int y, Color color)
+        {
+            DrawText("Press Space To Continue", x, y, Settings.fontSize, color);
+        }
 
         public static void LoadPic(int i, string[] objec)
         {

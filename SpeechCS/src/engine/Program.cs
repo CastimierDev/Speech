@@ -12,6 +12,7 @@ namespace Speech
         public static Texture2D background;
         public static Sound effect;
         public static Line line = new Line();
+        public static bool isRunning = true;
 
         public static void Main()
         {
@@ -21,7 +22,7 @@ namespace Speech
 
             line = Define.DefineLines();
 
-            while (!WindowShouldClose())
+            while (isRunning)
             {
                 if (line.command[index] != "choice") Input.CheckInput(index);
 
@@ -39,12 +40,11 @@ namespace Speech
 
                 EndDrawing();
             }
-
-            End();
         }
 
         public static void End()
         {
+            isRunning = false;
             Unload();
             CloseWindow();
         }

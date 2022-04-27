@@ -10,7 +10,7 @@ namespace Speech
         public static int screenWidth = 800;
         public static int screenHeigth = 600;
         public static int fps = 120;
-        public static Color bgColor = WHITE;
+        public static Color bgColor = BLACK;
         public static int fontSize = 20;
         public static bool continueCommands = true;
         public static String appName = "SPEECH";
