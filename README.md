@@ -8,9 +8,9 @@ This version is written in C# with Raylib-cs, but the original version (now the 
 # Example Of A Simple Program:
 The following lines (excluding: 1., 2. and 3.) can be copied into the Define class in the function "DefineLines".
 
-1. lines.SetLine("bg", "BLACK", WHITE, 0, 0, 0);
-2. lines.SetLine("say", "Hello World", WHITE, 0, 0, 1);
-3. lines.SetLine("end", "END", WHITE, 0, 0, 2);
+1. line = SetLine("bg", "BLACK", WHITE, 0, 0, 0);
+2. line = SetLine("say", "Hello World", WHITE, 0, 0, 1);
+3. line = SetLine("end", "END", WHITE, 0, 0, 2);
 
 Explanation:
 1. Sets the Background (bg) to a png called "BLACK", it is drawn in WHITE (how you normally see the png), than you define the x and y position, last you set when in the timeline it happens.
