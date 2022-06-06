@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fAoGqJVoy9Kb88KYhI2E0EHWghGc0xIk1JCF5z1erS8DNbcWhRV65K2md+mdrPleg3i3CrQKxkXAndnLC58ZVw==",
+  "dgSpecHash": "WPDld+fRWlou13uR9O5EJc4PlmPOf6tvZi3hDiLuRUMboXpk8j0QD9XIQLGn8KXSg2GjjUIsgVdDL4KPuVTNTw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\015820\\Desktop\\frameworks\\Raylib\\C#\\Speech\\Speech\\Speech\\SpeechCS\\SpeechCS.csproj",
+  "projectFilePath": "C:\\Users\\015820\\Desktop\\frameworks\\Raylib\\C#\\Speech\\Speech\\SpeechCS\\SpeechCS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\015820\\.nuget\\packages\\raylib-cs\\4.0.0.1\\raylib-cs.4.0.0.1.nupkg.sha512",
     "C:\\Users\\015820\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512"

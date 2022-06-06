@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\015820\\Desktop\\frameworks\\Raylib\\C#\\Speech\\Speech\\Speech\\SpeechCS\\SpeechCS.csproj": {}
+    "C:\\Users\\015820\\Desktop\\frameworks\\Raylib\\C#\\Speech\\Speech\\SpeechCS\\SpeechCS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\015820\\Desktop\\frameworks\\Raylib\\C#\\Speech\\Speech\\Speech\\SpeechCS\\SpeechCS.csproj": {
+    "C:\\Users\\015820\\Desktop\\frameworks\\Raylib\\C#\\Speech\\Speech\\SpeechCS\\SpeechCS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\015820\\Desktop\\frameworks\\Raylib\\C#\\Speech\\Speech\\Speech\\SpeechCS\\SpeechCS.csproj",
+        "projectUniqueName": "C:\\Users\\015820\\Desktop\\frameworks\\Raylib\\C#\\Speech\\Speech\\SpeechCS\\SpeechCS.csproj",
         "projectName": "SpeechCS",
-        "projectPath": "C:\\Users\\015820\\Desktop\\frameworks\\Raylib\\C#\\Speech\\Speech\\Speech\\SpeechCS\\SpeechCS.csproj",
+        "projectPath": "C:\\Users\\015820\\Desktop\\frameworks\\Raylib\\C#\\Speech\\Speech\\SpeechCS\\SpeechCS.csproj",
         "packagesPath": "C:\\Users\\015820\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\015820\\Desktop\\frameworks\\Raylib\\C#\\Speech\\Speech\\Speech\\SpeechCS\\obj\\",
+        "outputPath": "C:\\Users\\015820\\Desktop\\frameworks\\Raylib\\C#\\Speech\\Speech\\SpeechCS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\015820\\AppData\\Roaming\\NuGet\\NuGet.Config",
