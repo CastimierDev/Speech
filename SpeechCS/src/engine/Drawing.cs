@@ -9,6 +9,8 @@ namespace Speech
     {
         public static int bgX = 0;
         public static int bgY = 0;
+        public static int speakerX = 0;
+        public static int speakerY = 0;
         public static Color bgColor;
 
         public static void DrawSay(int i, string[] objec, int x, int y, Color color)
@@ -24,6 +26,12 @@ namespace Speech
             DrawTexture(Program.background, bgX, bgY, bgColor);
             //Console.WriteLine("Background Drawn!");
         }
+        public static void DrawSpeaker(int i)
+        {
+            DrawTexture(Program.speaker, speakerX, speakerY, bgColor);
+            //Console.WriteLine("Background Drawn!");
+        }
+
         public static void DrawChoices(string[] texts, int amount, int x, int y, Color color)
         {
             int yChange = y;
@@ -70,7 +78,23 @@ namespace Speech
             {
                 Console.WriteLine("Failed To Load Background!");
             }
-}
+        }
+        public static void LoadSpeaker(int i, string[] objec, int x, int y, Color color)
+        {
+            try
+            {
+                speakerX = x;
+                speakerY = y;
+                bgColor = color;
+                Program.speaker = LoadTexture("resources/images/" + objec[i] + ".png");
+                Parser.speakerLoaded = true;
+                Console.WriteLine("Loaded Speaker: " + objec[i]);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Failed To Load Speaker!");
+            }
+        }
 
         public static void DrawDevMode(int i)
         {

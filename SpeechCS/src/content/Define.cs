@@ -10,8 +10,8 @@ namespace Speech
         public static Line DefineLines()
         {
             Line line = new Line();
-            line = SetLine("bg", "ERROR", WHITE, 0, 0, 0, line);
-            line = SetLine("say", "Hello", WHITE, 0, 0, 1, line);
+            line = SetLine("bg", "WHITE", WHITE, 0, 0, 0, line);
+            line = SetLine("speaker", "BLACK", WHITE, 0, 0, 1, line);
             line = SetLine("audio", "bit", WHITE, 0, 0, 2, line);
             line = SetLine("say", "Hello", WHITE, 0, 0, 3, line);
             line = SetLine("end", "END", WHITE, 0, 0, 4, line);

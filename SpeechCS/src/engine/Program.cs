@@ -10,6 +10,7 @@ namespace Speech
         public static int index = 0;
         public static Texture2D texture;
         public static Texture2D background;
+        public static Texture2D speaker;
         public static Sound effect;
         public static Line line = new Line();
         public static bool isRunning = true;

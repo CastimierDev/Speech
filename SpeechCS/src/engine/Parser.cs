@@ -11,6 +11,7 @@ namespace Speech
         public static bool soundLoaded = false;
         public static bool backgroundLoaded = false;
         public static bool soundPlayed = false;
+        public static bool speakerLoaded = false;
 
         public static void Parse(int i, Line line)
         {
@@ -71,6 +72,14 @@ namespace Speech
                     Variables.Set(line.objec[i]);
                     if (Settings.continueCommands) Program.index += 1;
                     else Drawing.DrawContinue(Settings.screenWidth / 4, Settings.screenHeigth - Settings.fontSize * 2, WHITE);
+                    break;
+
+                case "speaker":
+                    if (!speakerLoaded) Drawing.LoadSpeaker(i, line.objec, line.x[i], line.y[i], line.color[i]);
+                    Drawing.DrawSpeaker(i);
+                    if (Settings.continueCommands) Program.index += 1;
+                    else Drawing.DrawContinue(Settings.screenWidth / 4, Settings.screenHeigth - Settings.fontSize * 2, WHITE);
+                    break;
                     break;
             }
         }
